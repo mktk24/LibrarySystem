@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.book.AddBookController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="isbn" promptText="ISBN">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="title" promptText="Book title ">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="author" promptText="Book author">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="publisher" promptText="Publisher">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#save" prefHeight="50.0" prefWidth="200.0" text="Save" />
+                  <Button mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="200.0" text="Cancel" />
+                  <Button mnemonicParsing="false" onAction="#switchToPrev" prefHeight="70.0" prefWidth="200.0" text="Back" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
